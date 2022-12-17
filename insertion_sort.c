@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 int main() {
-    int i, j, p;
+    int i, j, p;  0 1    2
     int list[] = {7,10,5,3,8,4,2,9,6};
     int n = sizeof(list)/sizeof(list[0]);
 
     for(i = 1; i <= n-1; i++) {
         p = list[i];
-        for(j = i; (i >= 1) && (p < list[j-1]); j--) {
+        for(j = i; (j >= 1) && (p < list[j-1]); j--) {
             list[j] = list[j-1];
         }
         list[j] = p;

@@ -6,7 +6,7 @@ int main() {
     int n = sizeof(list)/sizeof(list[0]);
 
     for(i = n-1; i >= 1; i--) {
-        for(j = 0; j < i; j++) {
+        for(j = 0; j <= i-1; j++) {
             if (list[j] > list[j+1]) {
                 aux = list[j];
                 list[j] = list[j+1];
